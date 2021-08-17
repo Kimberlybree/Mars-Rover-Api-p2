@@ -1,10 +1,19 @@
 import React from 'react';
+import App from '../App';
 
-function SearchBar(props) {
+
+function SearchBar () {
     return (
-        <div>
-            <h1>SearchBar</h1>
-        </div>
+   
+        <form className="form-horizontal">
+            <input placeholder="Search" type="text" name="searchString" required />
+            <button type="submit" className="search-button"> Search
+                </button> 
+
+        </form>
+       
+
+    
     );
 }
 

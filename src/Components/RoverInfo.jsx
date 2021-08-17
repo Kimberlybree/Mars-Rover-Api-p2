@@ -1,11 +1,22 @@
 import React from 'react';
+import SearchBar from './SearchBar';
+import App from '../App';
 
-function RoverInfo(props) {
+const RoverInfo = ({ photos }) => {
+  
+    if (!photos.length) {
+      return <h2>No photos Found!</h2>
+    }
+  
     return (
-        <div>
-            <h1>Rover Info</h1>
-        </div>
-    );
-}
+      <div className="roverPics">
+        {photos.map(photo => (
+          <div key={photo.rover_id} className="rover">
+            <img src={photo.url} />
+          </div>
+        ))}
+      </div>
+    )
+  }
 
 export default RoverInfo;

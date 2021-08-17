@@ -1,19 +1,45 @@
 body {
   background: black;
   color: white;
+  font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .App {
   font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 21px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 25px;
+  align-items: right;
+  justify-content: right;
 
+}
+header {
+  display: flex;
+  align-items: left;
+  justify-content: center;
 }
 img {
   align-items: flex-start;
+  width: 30%;
+  margin: 0 auto;
+}
+nav img {
+  align-items: flex-start;
   width: 20%;
   margin: 0 auto;
+}
+form {
+  display: flex;
+  align-items: right;
+  justify-content: center;
+}
+button {
+background: darkgray;
+}
+@media (min-width: 1200px) {
+.roverPics {
+  column-count: 4;
 
+  display: flex;
+  align-items: right;
+  justify-content: center;
+}
 }
