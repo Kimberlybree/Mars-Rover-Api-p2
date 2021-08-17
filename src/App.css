@@ -1,0 +1,19 @@
+body {
+  background: black;
+  color: white;
+}
+.App {
+  font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25px;
+
+}
+img {
+  align-items: flex-start;
+  width: 20%;
+  margin: 0 auto;
+
+}
