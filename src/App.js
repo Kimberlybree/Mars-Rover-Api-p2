@@ -1,81 +1,76 @@
+import React, { useState, useEffect } from 'react';
 import './App.css';
-import Main from './Components/Main';
+// import Main from './Components/Main';
 import RoverInfo from './Components/RoverInfo';
 import SearchBar from './Components/SearchBar';
 
 
-const photos = [
-  {
-    rover_id: 424926, 
-    name: 'Mast Camera',
-    url: 'http://mars.jpl.nasa.gov/msl-raw-images/msss/01000/mcam/1000ML0044631200305217E01_DXXX.jpg'
+function App() {
 
-  },
-  // {
-  //   rover_id: 424927,
-  //   name: 'Curiosity',
-  //   url: 'http://mars.jpl.nasa.gov/msl-raw-images/msss/01000/mcam/1000MR0044631190503679E04_DXXX.jpg","earth_date":"2015-05-30","rover',
-  //   landing_date: "2012-08-06",
-  //   launch_date: "2011-11-25",
-  //   status: 'Active',
-  // },
-  {
-    rover_id: 424928,
-    name: 'Mast Camera',
-    url: 'http://mars.jpl.nasa.gov/msl-raw-images/msss/01000/mcam/1000ML0044631190305216E04_DXXX.jpg',
+   
+  const [images, setImages] = useState([]);
+  const [searchString, setSearchString] = useState('marsroverphotos');
+  const [lastSearch, setLastSearch] = useState('');
 
-  },
-  {
-    rover_id: 5,
-    name: 'Curiosity',
-    status: 'Active'
+  const marsRoverApiKey = {
+    key: process.env.REACT_APP_STOCK_API_KEY,
+    limit: 25,
+    api: 'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=2&api_key=DEMO_KEY',
+    endpoint: '/search'
+  };
 
-  },
-  {
-    rover_id: 5,
-    name: 'Mast Camera',
-    url: 'http://mars.jpl.nasa.gov/msl-raw-images/msss/01000/mcam/1000ML0044631190305216E04_DXXX.jpg'
-  },
-  {
-  rover_id: 102693,
-  name: 'Curiosity, FHAZ, Front Hazard Avoidance Camera',
-  url: 'http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01000/opgs/edr/fcam/FLB_486265257EDR_F0481570FHAZ00323M_.JPG',
-  landingDate: '2012-08-06', 
-  launchDate: '2011-11-26'
-  },
-  {
-    rover_id: 102694,
-    name: 'Curiosity, FHAZ, Front Hazard Avoidance Camera',
-    url: 'http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01000/opgs/edr/fcam/FRB_486265257EDR_F0481570FHAZ00323M_.JPG',
-    landingDate: '2012-08-06', 
-    launchDate: '2011-11-26'
+
+  function handleChange(event) {
+    setSearchString(event.target.value);
   }
 
-];
+  function handleSubmit(event) {
+    event.preventDefault();
+    getImages(searchString);
+  }
 
+  
+  useEffect(() => {
+    getImages(searchString);
+  }, []);
 
-function App() {
+  function getImages(images) {
+    const url =`https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=2&api_key=DEMO_KEY`;
+
+    fetch(url)
+    .then(response => response.json())
+    .then(response => {
+      console.log(response);
+      setImages(response.data);
+      setLastSearch(images);
+      setSearchString('');
+    })
+    .catch(console.error);
+  }
+
   return (
    <div>
     <div className="App">
+
     <nav>
   
-   <img src="https://cdn.mos.cms.futurecdn.net/baYs9AuHxx9QXeYBiMvSLU.jpg" alt="" />
+   <img src="https://cdn.mos.cms.futurecdn.net/baYs9AuHxx9QXeYBiMvSLU.jpg" alt="nasaLogo" />
+ 
  
 
-   <header>NASA Mars Rover Photos</header>
  </nav>
+{/* 
+  <RoverInfo lastSearch={lastSearch}  images={images}/>
+      <SearchBar
+        handleChange={handleChange}
+        handleSubmit={handleSubmit}
+        searchString={searchString}
+      />
+      */}
 
    
-    
-
-     
     </div>
-    <SearchBar />
-   
-   <RoverInfo photos={photos} /> 
-
-    <Main />
+  
     
     </div>
   );

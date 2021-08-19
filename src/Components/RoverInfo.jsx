@@ -1,22 +1,34 @@
-import React from 'react';
-import SearchBar from './SearchBar';
-import App from '../App';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
-const RoverInfo = ({ photos }) => {
-  
-    if (!photos.length) {
-      return <h2>No photos Found!</h2>
-    }
-  
+const RoverInfo = ({images}) => {
+
+  const [rovers, setRoverInfo] = useState([images]);
+  useEffect(() => {
+    fetch('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=2&api_key=DEMO_KEY')
+    .then((res) => res.json())
+    .then(res => {
+      setRoverInfo(res);
+      console.log(res)
+    }) }, []);
+
     return (
-      <div className="roverPics">
-        {photos.map(photo => (
-          <div key={photo.rover_id} className="rover">
-            <img src={photo.url} />
-          </div>
-        ))}
-      </div>
+      <section className="container">
+        {rovers.map(rover => {
+          return (
+            <div className="card">
+              <div className="card-image">
+                <img src={images.map} 
+                alt=" "
+                />
+
+              </div>
+            </div>
+          )
+        })}
+      </section>
     )
-  }
+      
+      }
 
 export default RoverInfo;
