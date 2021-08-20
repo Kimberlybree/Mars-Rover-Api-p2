@@ -1,65 +1,98 @@
 body {
-  background: black;
+  background: white;
   color: white;
   font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0 auto;
 }
-.App {
+h1 {
   font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 15px;
+  font-size: 21px;
   display: flex;
-  align-items: center;
+  align-items: right;
+  justify-content: center;
+}
+.nav {
+  background: url('https://user-images.githubusercontent.com/86509310/129934881-18eed1bf-9ca9-4ede-8b1a-8ec318bdbda7.png');
+  background-size: cover;
+  display: flex;
+  align-items: column;
   justify-content: center;
   top: 0;
   position: fixed;
-  background: url('https://user-images.githubusercontent.com/86509310/129934881-18eed1bf-9ca9-4ede-8b1a-8ec318bdbda7.png');
+
+
+
+}
+/* .App {
+  display: flex;
+  align-items: column;
+  justify-content: center;
+  top: 0;
+  position: fixed;
+
+} */
+img {
+  width: 100%;
+  margin: 2rem;
   
 }
-img {
-    padding-top: 30px;
-    margin: 0 auto;
-    width: 100%;
-    
-}
-nav img {
+
+.nasaImg img {
   align-items: flex-start;
-  width: 15%;
-  margin: 0 auto;
-  /* position: fixed;
-  top: 0; */
+  width: 20%;
+
 }
 form {
   display: flex;
   align-items: right;
   justify-content: right;
-
   
 }
-button {
-background: darkgray;
-}
 .searchBar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-top: 30px;
+  padding-right: 40px;
+  height: 25px;
+
 
 }
-@media (min-width: 1000px) {
+#aboutButton {
+height: 30px;
+
+}
+
+/* .searchBar {
+  display: flex;
+  align-items: right;
+  justify-content: right;
+
+} */
+/* /* .gallery {
+  
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+ */
+
+/* } */
+@media (min-width: 600px) {
   button + button,
   input + button {
     margin-left: 1rem;
   }
-  .roverPics {
+
+  .gallery {
     column-count: 2;
+  }
+}
+@media (min-width: 1000px) {
+  .gallery {
+    column-count: 3;
   }
 }
 
 @media (min-width: 1400px) {
-  .roverPics {
-    column-count: 3;
-  }
-}
-@media (min-width: 1500px) {
-  .roverPics {
+  .gallery {
     column-count: 4;
   }
 }

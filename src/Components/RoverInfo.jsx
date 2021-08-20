@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
+
 const RoverInfo = ({images}) => {
 
   const [rovers, setRoverInfo] = useState([images]);
@@ -14,18 +15,7 @@ const RoverInfo = ({images}) => {
 
     return (
       <section className="container">
-        {rovers.map(rover => {
-          return (
-            <div className="card">
-              <div className="card-image">
-                <img src={images.map} 
-                alt=" "
-                />
-
-              </div>
-            </div>
-          )
-        })}
+       
       </section>
     )
       
