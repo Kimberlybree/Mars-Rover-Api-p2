@@ -1,8 +1,15 @@
 body {
-  background: white;
+  background:black;
   color: white;
   font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0 auto;
+}
+ul {
+  list-style-type: none;
+}
+li img {
+  height: 120px;
+  width: 140px;
 }
 h1 {
   font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -11,70 +18,47 @@ h1 {
   align-items: right;
   justify-content: center;
 }
-.nav {
-  background: url('https://user-images.githubusercontent.com/86509310/129934881-18eed1bf-9ca9-4ede-8b1a-8ec318bdbda7.png');
-  background-size: cover;
-  display: flex;
-  align-items: column;
-  justify-content: center;
-  top: 0;
-  position: fixed;
-
-
+.App {
+  background: url('https://user-images.githubusercontent.com/86509310/130370298-a1e67400-6bdb-4737-9d51-2b8a40809cf3.png');
 
 }
-/* .App {
-  display: flex;
-  align-items: column;
-  justify-content: center;
-  top: 0;
-  position: fixed;
-
-} */
 img {
-  width: 100%;
+  margin: 0 auto;
+  width: 80%;
   margin: 2rem;
-  
 }
-
-.nasaImg img {
-  align-items: flex-start;
-  width: 20%;
-
+.App li {
+  height: 40px;
 }
 form {
   display: flex;
   align-items: right;
   justify-content: right;
+  line-height: 23px;
   
 }
-.searchBar {
-  padding-top: 30px;
-  padding-right: 40px;
-  height: 25px;
-
+h2 {
+  margin: 0 auto;
+  padding: 90px 50px 50px 50px;
+  font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 600px;
+}
+h3 {
+  margin: 0 auto;
+  padding: 20px 20px 20px 20px;
+  height: 700px;
+  width: 700px;
 
 }
-#aboutButton {
-height: 30px;
-
+footer {
+  margin: 0 auto;
+  color: white;
+  padding: 20px;
 }
-
-/* .searchBar {
-  display: flex;
-  align-items: right;
-  justify-content: right;
-
-} */
-/* /* .gallery {
-  
-  top: 50%;
-  left: 50%;
-  width: 300px;
-  height: 300px;
- */
-
-/* } */
+.about {
+  align-items: center;
+}
 @media (min-width: 600px) {
   button + button,
   input + button {
@@ -93,6 +77,6 @@ height: 30px;
 
 @media (min-width: 1400px) {
   .gallery {
-    column-count: 4;
+    column-count: 3;
   }
 }
