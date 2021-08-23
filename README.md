@@ -10,6 +10,11 @@
 <img width="993" alt="image" src="https://media.git.generalassemb.ly/user/37231/files/9a936380-042e-11ec-8dd3-b3d6f0a5cd83">
 
 
+
+<img width="1017" alt="Screen Shot 2021-08-23 at 4 26 04 PM" src="https://media.git.generalassemb.ly/user/37231/files/ec3bee00-042e-11ec-90b6-6575d4752a48">
+
+
+
 ## User Stories
 > As the user, I want to look through photos based on launch dates to track the mission status.
 >As the user, I want to see the name of the Rover and name of the camera used to capture the shot. 
