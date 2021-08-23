@@ -14,9 +14,7 @@ function About(props) {
             
             </h3>
 
-   <footer> 
-       sourced from www.nasa.gov
-   </footer>
+
     
 
         </div>
