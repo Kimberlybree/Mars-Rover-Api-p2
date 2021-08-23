@@ -1,32 +1,35 @@
 body {
-  background:black;
-  color: white;
-  font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: white;
+  color: black;
   margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
 }
 ul button {
-  font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Rampart One', cursive;
   list-style-type: none;
+  text-decoration: none;
+  list-style: none;
   font-size: 19px;
-  margin-left: 50rem;
+
+
+}
+ul li {
+  list-style: none;
 }
 
 li img {
-  display: -webkit-inline-flex;
-  display: flex-start;
-  height: 100px;
+  height: 60px;
   width: 120px;
-  margin: inline-start;
-}
-h1 {
-  font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 21px;
-  display: flex;
-  align-items: right;
-  justify-content: center;
+  margin-top: -1rem;
+ 
 }
 .App {
-  background: url('https://user-images.githubusercontent.com/86509310/130370298-a1e67400-6bdb-4737-9d51-2b8a40809cf3.png');
+  background: url('https://user-images.githubusercontent.com/86509310/130470445-21f226b6-0bce-47bc-bda9-bac3dd11ea7d.jpeg');
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ 
 }
 img {
   margin: 0 auto;
@@ -35,13 +38,20 @@ img {
 }
 .App li {
   height: 40px;
-
+  list-style: none;
+}
+h1 {
+  font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  display: flex;
+  align-items: right;
+  justify-content: center;
 }
 h2 {
   margin: 0 auto;
   padding: 90px 50px 50px 50px;
-  font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 19px;
+  font-family: 'Rampart One', cursive;
+  font-size: 24px;
   font-weight: 600px;
 }
 h3 {
@@ -50,6 +60,24 @@ h3 {
   height: 700px;
   width: 700px;
 
+}
+.signUpForm {
+  border: 8px;
+  border-style: solid;
+  border-radius: 8px;
+  border-color:  black;
+  height: 100vh;
+  width: 60vw;
+  margin: 4em auto;
+  display: flex;
+  align-items: center;
+  
+}
+form {
+  font-size: 20px;
+}
+form h1 {
+  font-size: 26px;
 }
 .about {
   align-items: center;

@@ -1,10 +1,13 @@
 import React from 'react';
-import App from '../App';
+
 
 const Main = ({images}) => {
-    if (!images.length) {
+    console.log(images)
+    if (!images) {
         return <h3>Try Again!</h3>
     }
+
+    let gal = images.filter(img => img !== undefined); 
 
     return (
      

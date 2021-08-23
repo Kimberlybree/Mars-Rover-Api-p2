@@ -44,17 +44,18 @@ function App() {
 
 <div>
 
-      <div className="App">
+<div className="App">
+  <li>  <Link to="/Home">
+  <img src="https://user-images.githubusercontent.com/86509310/130476020-28e7db3a-74b0-44fb-a6e2-8fe3c0a46533.png" alt="nasaLogo" /> </Link> </li>
+  <ul>
+  <li> <button className="aboutButton"> <Link to="/About">About </Link> </button> </li>  
+  <li> <button className="mainButton" > <Link to="/Main">Main </Link> </button> </li>
+  </ul>
 
-<li>  <Link to="/Home">
-<img src="https://cdn.mos.cms.futurecdn.net/baYs9AuHxx9QXeYBiMvSLU.jpg" alt="nasaLogo" /> </Link> </li>
-<ul>
-<li> <button> <Link to="/About">About </Link> </button> </li>  
-<li> <button > <Link to="/Main">Main </Link> </button> </li>
-</ul>
-
-    
+  
  </div>
+
+
  <Route exact path="/Home"
         component={Home} /> 
 
