@@ -1,7 +1,7 @@
 ## Project Description 
 > A React built website using Nasa's API to retrieve information on Mars Rover Photos about Nasa
 
-## Link to the API you plan to use
+## Link to the API 
 > https://api.nasa.gov
 
 ## Wire Frames
