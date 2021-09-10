@@ -13,14 +13,16 @@ This project is built using React App, HTML, CSS, Google Fonts and Google Images
 
 
 # MVP Goals
-A fully functional 3rd party API webpage using React and at least 4 components. 
-Use of flexbox or CSS grid.
+> A fully functional 3rd party API webpage using React and at least 4 components. 
+> Use of flexbox or CSS grid.
+> An About Page
+> A Sign up form
+> Button Functionality with routing in React
+> Deployed to Heroku 
 
 
-<img width="884" alt="Screen Shot 2021-09-09 at 9 35 49 PM" src="https://user-images.githubusercontent.com/86509310/132784751-8625d356-39c1-4423-960c-9dafedf874c4.png">
 
-
-<h2> Api Source </h2>
+<h2> Api open Source </h2>
 https://api.nasa.gov
 
 
