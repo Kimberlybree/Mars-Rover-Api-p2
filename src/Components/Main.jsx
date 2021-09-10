@@ -13,9 +13,8 @@ const Main = ({images}) => {
      
         <div className="gallery">
               {images.map(image => (
-              <div key={image.id} className="imgId">
-             <img src={image.img_src} alt=" "/>
-             {/* {images[0].rover.landing_date} */}
+             <div key={image.id} className="imgId">
+                <img src={image.img_src} alt=" "/>
              </div>
             
             ))}

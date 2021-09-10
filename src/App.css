@@ -1,30 +1,25 @@
 body {
+  font-family:'Urbanist', sans-serif;
   background: white;
   color: black;
   margin: 0 auto;
-  font-family: 'Open Sans', sans-serif;
 }
 ul button {
-  font-family: 'Rampart One', cursive;
-  list-style-type: none;
-  text-decoration: none;
-  list-style: none;
-  font-size: 19px;
-
-
+  font-size: 18px;
+  border-radius: 8px; 
+  background-color: lightgray;
 }
 ul li {
   list-style: none;
 }
-
 li img {
   height: 60px;
   width: 120px;
   margin-top: -1rem;
- 
 }
 .App {
-  background: url('https://user-images.githubusercontent.com/86509310/130470445-21f226b6-0bce-47bc-bda9-bac3dd11ea7d.jpeg');
+  /* background: url('https://user-images.githubusercontent.com/86509310/130470445-21f226b6-0bce-47bc-bda9-bac3dd11ea7d.jpeg'); */
+  background: url('https://erepublic.brightspotcdn.com/dims4/default/6eefba8/2147483647/strip/true/crop/1080x563+0+33/resize/840x438!/quality/90/?url=http%3A%2F%2Ferepublic-brightspot.s3.amazonaws.com%2F40%2Fdc%2F37b51308130ad8ef01d762ae7730%2Fsurface-of-mars.jpg'); 
   background-size: cover;
   display: flex;
   justify-content: space-around;
@@ -41,43 +36,38 @@ img {
   list-style: none;
 }
 h1 {
-  font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Urbanist', sans-serif;
   font-size: 18px;
   display: flex;
   align-items: right;
   justify-content: center;
 }
 h2 {
-  margin: 0 auto;
-  padding: 90px 50px 50px 50px;
-  font-family: 'Rampart One', cursive;
+  font-family: 'Urbanist', sans-serif;
   font-size: 24px;
-  font-weight: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  max-width: 80vw;
+  max-height: 80vw;
 }
 h3 {
-  margin: 0 auto;
-  padding: 20px 20px 20px 20px;
-  height: 700px;
-  width: 700px;
-
+  font-family: 'Urbanist', sans-serif;
+  margin: 3rem;
 }
 .signUpForm {
-  border: 8px;
-  border-style: solid;
-  border-radius: 8px;
-  border-color:  black;
-  height: 100vh;
-  width: 60vw;
-  margin: 4em auto;
+  background-image: url('https://erepublic.brightspotcdn.com/dims4/default/6eefba8/2147483647/strip/true/crop/1080x563+0+33/resize/840x438!/quality/90/?url=http%3A%2F%2Ferepublic-brightspot.s3.amazonaws.com%2F40%2Fdc%2F37b51308130ad8ef01d762ae7730%2Fsurface-of-mars.jpg');
+  font-size: 18px;
   display: flex;
   align-items: center;
-  
-}
-form {
-  font-size: 20px;
-}
-form h1 {
-  font-size: 26px;
+  justify-content: center;
+  border: 3px;
+  border-style: solid;
+  border-color:  gray;
+  max-height: 60vh;
+  max-width: 30vw;
+  margin: 0 auto;
+  margin-top: 4rem;
+  color: white;
 }
 .about {
   align-items: center;
