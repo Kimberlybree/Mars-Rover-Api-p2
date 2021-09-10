@@ -42,29 +42,31 @@ function App() {
 
   return (
 
+
 <div>
 
-<div className="App">
-  <li>  <Link to="/Home">
-  <img src="https://user-images.githubusercontent.com/86509310/130476020-28e7db3a-74b0-44fb-a6e2-8fe3c0a46533.png" alt="nasaLogo" /> </Link> </li>
-  <ul>
-  <li> <button className="aboutButton"> <Link to="/About">About </Link> </button> </li>  
-  <li> <button className="mainButton" > <Link to="/Main">Main </Link> </button> </li>
-  </ul>
+  <div className="App">
+    <li>  <Link to="/Home">
+    <img src="https://user-images.githubusercontent.com/86509310/130476020-28e7db3a-74b0-44fb-a6e2-8fe3c0a46533.png" alt="nasaLogo" /> </Link> </li>
+    <ul>
+    <li> <button variant="aboutButton"> <Link to="/About">About </Link> </button> </li>  
+    <li> <button variant="mainButton" > <Link to="/Main">Main </Link> </button> </li>
+    </ul>
 
-  
- </div>
-
-
- <Route exact path="/Home"
-        component={Home} /> 
+    
+    </div>
+        <Route exact path="/Home"
+            component={Home} /> 
 
         <Route exact path="/About" 
-        component={About} />
+            component={About} />
 
-      <Route exact path="/Main"
-        render={() => <Main images={images} />} />
- </div>
+        <Route exact path="/Main"
+            render={() => <Main images={images} />} />
+
+
+       
+</div>
 
 
   );
