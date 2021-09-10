@@ -1,7 +1,4 @@
 
-https://git.heroku.com/curiosityphotos.git
-
-
 <h2>Curiosity Rover Photos</h2>
 This project is built using React App, Javascript, HTML, CSS, Google Fonts and Google Images, and more. The information is retrieved from NASA's open API source to render images taken on mars from an one of the 7 cameras on an active mission from the rover. 
 
@@ -13,11 +10,7 @@ This project is built using React App, Javascript, HTML, CSS, Google Fonts and G
 <img width="923" alt="Screen Shot 2021-09-09 at 9 41 37 PM" src="https://user-images.githubusercontent.com/86509310/132785221-fe293270-02f2-4dc3-920a-b94d9526ba25.png">
 
 
-
-## User Stories
-> As the user, I want to navigate a user-friendly website.
-> As the user, I am coming to the site to check out recent photos captured by the Mars Curiosity Rover. 
->As the user, I want to see the name of the Rover and name of the camera used to capture the shot. 
+As the user, I want to navigate a user-friendly website. As the user, I am coming to the site to check out recent photos captured by the Mars Curiosity Rover. As the user, I want to see the name of the Rover and name of the camera used to capture the shot. 
 
 
 ## MVP Goals
