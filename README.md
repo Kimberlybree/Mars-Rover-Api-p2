@@ -5,6 +5,9 @@ This project is built using React App, HTML, CSS, Google Fonts and Google Images
 
 <img width="884" alt="Screen Shot 2021-09-09 at 9 35 49 PM" src="https://user-images.githubusercontent.com/86509310/132784751-8625d356-39c1-4423-960c-9dafedf874c4.png">
 
+<img width="923" alt="Screen Shot 2021-09-09 at 9 41 37 PM" src="https://user-images.githubusercontent.com/86509310/132785221-fe293270-02f2-4dc3-920a-b94d9526ba25.png">
+
+
 
 ## User Stories
 > As the user, I want to navigate a user-friendly website.
@@ -19,6 +22,9 @@ This project is built using React App, HTML, CSS, Google Fonts and Google Images
 > A Sign up form
 > Button Functionality with routing in React
 > Deployed to Heroku 
+
+## Notes:
+Because of the large amount of photos, the API may return "try again." The API only allows a certain amount of calls per day.
 
 
 
