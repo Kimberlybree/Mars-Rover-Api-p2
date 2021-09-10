@@ -1,5 +1,5 @@
 
-<h1>Curiosity Rover Images</h1>
+<h2>Curiosity Rover Images</h2>
 This project is built using React App, HTML, CSS, Google Fonts and Google Images, and more. The information is retrieved from NASA's open API source to render images taken on mars from an one of the 7 cameras on an active mission from the rover. 
 
 # User Stories
