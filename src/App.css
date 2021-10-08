@@ -4,27 +4,18 @@ body {
   color: black;
   margin: 0 auto;
 }
-ul button {
-  font-size: 18px;
-  border-radius: 8px; 
-  background-color: lightgray;
-}
-ul li {
-  list-style: none;
-}
 li img {
   height: 60px;
   width: 120px;
   margin-top: -1rem;
 }
 .App {
-  /* background: url('https://user-images.githubusercontent.com/86509310/130470445-21f226b6-0bce-47bc-bda9-bac3dd11ea7d.jpeg'); */
-  background: url('https://erepublic.brightspotcdn.com/dims4/default/6eefba8/2147483647/strip/true/crop/1080x563+0+33/resize/840x438!/quality/90/?url=http%3A%2F%2Ferepublic-brightspot.s3.amazonaws.com%2F40%2Fdc%2F37b51308130ad8ef01d762ae7730%2Fsurface-of-mars.jpg'); 
   background-size: cover;
   display: flex;
   justify-content: space-around;
   align-items: center;
- 
+  margin: 3rem;
+
 }
 img {
   margin: 0 auto;
@@ -93,17 +84,9 @@ h3 {
     column-count: 3;
   }
 }
-.signUp {
-  color: white;
-  padding: 1.5rem 2rem;
-  display: block;
-  align-items: center;
-
-}
 form {
   display: inline-block;
   align-items: center;
   text-align: left;
   margin: 10rem;
-
 }

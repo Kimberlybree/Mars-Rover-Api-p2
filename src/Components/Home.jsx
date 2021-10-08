@@ -7,11 +7,8 @@ function Home() {
 
   const initialState = {
     username: '',
-  
     password: '',
-  
     passwordConfirm: '',
-  
     valid: ''
   }
   const [formState, setFormState] = useState(initialState);
@@ -53,7 +50,7 @@ const handleChange = (event) => {
             placeholder="Confirm password"
             id="passwordConfirm"/>
             <label htmlFor="passwordConfirm">Confirm password</label>
-       <br /> 
+           <br /> 
           <button type="submit" onSubmit={handleSubmit}>Sign Up </button>
             <p>Passwords must match.</p>
         </form>
